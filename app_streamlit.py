@@ -16,7 +16,8 @@ if st.button("Prediksi"):
 	data_baru = pd.DataFrame([[kill,assist,death,turret]],
 columns=["kill","assist","death","turret"])
 	st.success(f"Hasil Prediksi : {loaded_model.predict(data_baru)[0]}")
-	st.ballons()
+	st.balloons()
 
 
 st.caption("Program ini dibuat :heart: oleh Fahmi Dwi Santoso")
+
